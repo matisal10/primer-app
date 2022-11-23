@@ -1,0 +1,22 @@
+h1{
+    color: brown;
+}
+
+.task-action{
+    cursor: pointer;
+}
+
+.task-completed{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.task-pendindg{
+    font-weight: bold;
+    color: tomato;
+}
+
+.taskName{
+    font-weight: bold;
+    color: cadetblue;
+}

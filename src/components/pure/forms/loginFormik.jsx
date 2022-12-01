@@ -1,6 +1,7 @@
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom'
 
 
 const loginShema = Yup.object().shape({
@@ -18,6 +19,12 @@ const LoginFormik = () => {
         password: ''
     }
 
+    const navigate = useNavigate();
+
+    const register =()=>{
+        navigate('/register')
+    }
+
     return (
         <div>
             <h4>Login Formik</h4>
@@ -27,7 +34,8 @@ const LoginFormik = () => {
                 onSubmit={async (values) => {
                     await new Promise((r) => setTimeout(r, 1000));
                     alert(JSON.stringify(values, null, 2));
-                    localStorage.setItem('credentials', values)
+                    localStorage.setItem('credentials', values);
+                    navigate('/profile')
                 }}
             >
 
@@ -71,8 +79,13 @@ const LoginFormik = () => {
                 )
 
                 }
-
+                
             </Formik>
+            <div style={{marginTop: '10px'}}>
+                <h2>No estas registrado?</h2>
+                <button onClick={register}>Registrate</button>
+            </div>
+            
         </div>
     );
 }

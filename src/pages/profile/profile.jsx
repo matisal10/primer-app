@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom'
 
-const NoFoundPage = () => {
+const Profile = ({user}) => {
 
     const history = useNavigate()
 
@@ -15,10 +15,11 @@ const NoFoundPage = () => {
 
     return (
         <div>
-            <h1>404 - Page Not Found</h1>
-            <button onClick={ () => navigate('/')}>Go to home</button>
+            <h1>Your profile</h1>
+            <button onClick={()=>navigate('/tasks')}>tasks</button>
+            <button onClick={goBack}>Go back</button>
         </div>
     );
 }
 
-export default NoFoundPage;
+export default Profile;

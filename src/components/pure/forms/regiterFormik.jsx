@@ -5,6 +5,8 @@ import * as Yup from 'yup'
 import { User } from '../../models/user.class';
 import { ROLES } from '../../models/role.enum';
 
+import { useNavigate } from 'react-router-dom'
+
 const RegiterFormik = () => {
 
     const initialValues = {
@@ -43,6 +45,12 @@ const RegiterFormik = () => {
 
     const submit = (values) => {
         console.log('register user')
+    }
+
+    const navigate = useNavigate();
+
+    const login =()=>{
+        navigate('/login')
     }
 
 
@@ -123,6 +131,10 @@ const RegiterFormik = () => {
 
                 }
             </Formik>
+            <div style={{marginTop: '10px'}}>
+                <h2>Inicia Sesion</h2>
+                <button onClick={login}>Login</button>
+            </div>
         </div>
     );
 }

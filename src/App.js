@@ -4,9 +4,14 @@ import './App.css';
 // import GreetingStyled from './components/pure/greetingStyled';
 // import Greeting from './components/pure/greeting';
 // import GreetingF from './components/pure/greetingF';
-import TaskList from './components/container/task_list';
-import LoginFormik from './components/pure/forms/loginFormik';
-import RegiterFormik from './components/pure/forms/regiterFormik';
+// import TaskList from './components/container/task_list';
+// import AsyncExample from './components/pure/asyncExample';
+// import AxiosExample from './components/pure/axiosExample';
+import ChuckJokes from './components/pure/chuckJokes';
+// import FetchExample from './components/pure/fetchExample';
+// import LoginFormik from './components/pure/forms/loginFormik';
+// import RegiterFormik from './components/pure/forms/regiterFormik';
+// import ObservableExample from './components/pure/observableExample';
 // import OptionalRender from './components/pure/optionalRender';
 // import Father from './components/container/father';
 // import Ejemplo1 from './hooks/ejemplo1';
@@ -39,6 +44,11 @@ function App() {
       {/* <LoginFormik></LoginFormik> */}
       {/* <RegiterFormik></RegiterFormik> */}
       {/* <Father></Father> */}
+      {/* <AsyncExample></AsyncExample> */}
+      {/* <ObservableExample></ObservableExample> */}
+      {/* <FetchExample></FetchExample> */}
+      {/* <AxiosExample></AxiosExample> */}
+      <ChuckJokes></ChuckJokes>
     </div>
   );
 }

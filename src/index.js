@@ -14,9 +14,9 @@ import AppRoutingFinish from './appRoutingFinish';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <AppRouting1></AppRouting1> */}
-    <AppRoutingFinish></AppRoutingFinish>
+    {/* <AppRoutingFinish></AppRoutingFinish> */}
   </React.StrictMode>
 );
 
